@@ -1,10 +1,9 @@
-const player = {
-    name: "jihye", 
-    points: 10,
-    fat: true,
-};
-console.log(player);
-console.log(player.name);       // console.log(player."name");  
+function plus(a, b) {
+    console.log(a + b);
+}
+function divide(a, b){
+    console.log(a / b);
+}
 
-player.fat = false;
-console.log(player);
+plus(8, 60);
+divide(98, 20);
