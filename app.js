@@ -1,8 +1,8 @@
-const playerName = "nico";
-const playerPoints = 121212;
-const playerHandsome = ture;
-const playerFat = "litle bit";
+const player = {
+    name: "jihye", 
+    points: 10,
+    fat: true,
+};
 
-player.name
-player.points
-player.hansdome
+console.log(player);
+console.log(player.name);
