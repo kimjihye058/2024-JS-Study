@@ -4,7 +4,6 @@ const player = {
     fat: true,
 };
 console.log(player);
-console.log(player.name);       // console.log(player."name");  
-
-player.fat = false;
-console.log(player);
+player.lastName = "Kim";
+player.points = player.points + 15;
+console.log(player.points);
