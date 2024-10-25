@@ -1,3 +1,4 @@
-const hellos = document.getElementsByClassName("hello");
+const title = document.getElementsByTagName("h1");
+// tag => anchor, div, section, button etc.
 
-console.log(hellos);    // hellos is array
+console.log(title);     // title is an array
