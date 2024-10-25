@@ -1,4 +1,4 @@
-const title = document.getElementsByTagName("h1");
-// tag => anchor, div, section, button etc.
+const title = document.querySelector(".hello h1");
+// querySelector may search for an element in a css method.
 
 console.log(title);     // title is an array
