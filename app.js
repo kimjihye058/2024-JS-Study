@@ -1,5 +1,3 @@
-const title = document.getElementById("something"); // error! Cannot set property 'innerText' of null
+const hellos = document.getElementsByClassName("hello");
 
-title.innerText = "Got you!";
-
-console.log(title.className);
+console.log(hellos);    // hellos is array
