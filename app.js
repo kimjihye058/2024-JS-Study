@@ -1,6 +1,4 @@
-const title = document.querySelector(".hello h1");
-// querySelector may search for an element in a css method.
-// querySelector returns only one element.
-// ** querySelector brings only the first element.
+const title = document.querySelectorAll(".hello h1");
+// querySelectorAll gets all elements that meet the conditions in this selector.
 
 console.log(title);
