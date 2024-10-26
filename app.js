@@ -1,5 +1,7 @@
 const title = document.querySelector("div.hello:first-child h1");
 
-console.dir(title);
+function handleTitleClick() { //When a click event occurs, this function is executed
+    console.log("title was clicked");
+} 
 
-title.style.color = "blue";
+title.addEventListener("click", handleTitleClick);    // listening CLICK somebody title
