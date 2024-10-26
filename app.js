@@ -1,4 +1,5 @@
-const title = document.querySelectorAll(".hello h1");
-// querySelectorAll gets all elements that meet the conditions in this selector.
+const title = document.querySelector("div.hello:first-child h1");
 
 console.log(title);
+
+title.innerText = "Hello";
