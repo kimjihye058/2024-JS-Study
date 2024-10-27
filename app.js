@@ -20,10 +20,19 @@ function handleWindowCopy() { //When copying something (ctrl+c)
     alert("copier!");
 }
 
+function handleWindowOffline() { //When the Wi-Fi is not connected
+    alert("Wi-Fi not connected");
+}
+
+function handleWindowOnline() { //When the Wi-Fi is connected
+    alert("Wi-Fi connected");
+}
+
 h1.addEventListener("click", handleTitleClick);
 h1.addEventListener("mouseenter", handleMouseEnter);
 h1.addEventListener("mouseleave", handleMouseLeave);
 
 window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy", handleWindowCopy);
-
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
