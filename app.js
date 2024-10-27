@@ -12,8 +12,12 @@ function handleMouseLeave() { //when the mouse is gone from h1
     h1.innerText = "Mouse is gone!";
 }
 
-function handleWindowResize() {
+function handleWindowResize() { //When adjusting the window screen
     document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy() { //When copying something (ctrl+c)
+    alert("copier!");
 }
 
 h1.addEventListener("click", handleTitleClick);
@@ -21,4 +25,5 @@ h1.addEventListener("mouseenter", handleMouseEnter);
 h1.addEventListener("mouseleave", handleMouseLeave);
 
 window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
 
