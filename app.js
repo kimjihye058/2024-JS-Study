@@ -1,7 +1,19 @@
 const title = document.querySelector("div.hello:first-child h1");
 
-function handleTitleClick() { //When a click event occurs, this function is executed
-    console.log("title was clicked");
+console.dir(title);
+
+function handleTitleClick() { //When a click event occurs
+    title.style.color = "blue";
 } 
 
-title.addEventListener("click", handleTitleClick);    // listening CLICK somebody title
+function handleMouseEnter() { //When the mouse touches h1
+    title.innerText ="Mouse is here!";
+}
+
+function handleMouseLeave() { //when the mouse is gone from h1
+    title.innerText = "Mouse is gone!";
+}
+
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
