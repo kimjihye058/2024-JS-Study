@@ -8,8 +8,9 @@ function onLoginSubmit(event) {
     console.log(loginInput.value);
 }
 
-function handleLinkClick() {
-    alert("clicked");       // blocks evrything
+function handleLinkClick(event) {
+    event.preventDefault();
+    console.log(event);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
