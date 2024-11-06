@@ -1,7 +1,9 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-function handleTitleClick() {
-    h1.classList.toggle("clicked"); // toggle function checks whether the class name exists
+function LoginBtnClick() {
+    console.log(loginInput.value);        // click시 value가 저장됨
+    console.log("click");       // click시 "click"이라고 console에 찍음
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", LoginBtnClick);
