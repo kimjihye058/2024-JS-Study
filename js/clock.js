@@ -1,7 +1,9 @@
 const clock = document.querySelector("#clock");
 
-function sayHello() {
-    console.log("hello");
+function getClock() {
+    const date = new Date();
+    clock.innerText =`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
 
-setTimeout(sayHello, 5000);     // Run sayHello function in 5 seconds
+getClock();     // time came out right away
+setInterval(getClock, 1000);
